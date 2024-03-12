@@ -31,7 +31,7 @@ source ~/.bashrc
 sudo apt install -y npm
 sudo nvm install 16.10.0
 node -e "console.log('Running Node.js ' + process.version)"
-sudo npm i -g npm
+sudo npm i -g npm@8.19.4
 sudo npm install -g lodash
 sudo npm i --save lodash
 
