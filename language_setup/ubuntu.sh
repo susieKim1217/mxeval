@@ -18,7 +18,6 @@ sudo n 16.10.0
 node -e "console.log('Running Node.js ' + process.version)"
 sudo npm i -g npm@8.19.4
 sudo npm install -g lodash
-npm i --save lodash
 
 printf "%100s" " " | tr ' ' '-'
 echo ""
@@ -27,7 +26,6 @@ printf "%100s" " " | tr ' ' '-'
 echo ""
 sudo npm install -g typescript
 sudo npm install -g assert
-npm i --save assert
 
 
 printf "%100s" " " | tr ' ' '-'
