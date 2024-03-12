@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-apt install -y sudo pip vim
+apt install -y sudo pip vim npm
 pip install tqdm fire numpy gunicorn flask requests psutil cx_Oracle inquirer
 
 
