@@ -29,8 +29,8 @@ sudo apt install -y curl
 curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
 source ~/.bashrc
 sudo apt install -y npm
-sudo nvm install 16.10.0
-sudo node -e "console.log('Running Node.js ' + process.version)"
+nvm install 16.10.0
+node -e "console.log('Running Node.js ' + process.version)"
 sudo npm i -g npm@8.19.4
 sudo npm install -g lodash
 sudo npm i --save lodash
