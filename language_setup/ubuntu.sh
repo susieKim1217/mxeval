@@ -1,19 +1,32 @@
 #!/usr/bin/bash
 
+printf "%100s" " " | tr ' ' '-'
+echo ""
+echo "setting up environment"
+printf "%100s" " " | tr ' ' '-'
+echo ""
 apt install -y sudo pip vim npm wget curl
 pip install tqdm fire numpy gunicorn flask requests psutil cx_Oracle inquirer
 
-
+printf "%100s" " " | tr ' ' '-'
+echo ""
+echo "setting up JavaScript "
+printf "%100s" " " | tr ' ' '-'
+echo ""
 sudo npm install -g n
 sudo n 16.10.0
 node -e "console.log('Running Node.js ' + process.version)"
-npm i -g npm@8.19.4
-npm install -g lodash
+sudo npm i -g npm@8.19.4
+sudo npm install -g lodash
 npm i --save lodash
 
-
-npm install -g typescript
-npm install -g assert
+printf "%100s" " " | tr ' ' '-'
+echo ""
+echo "setting up TypeScript "
+printf "%100s" " " | tr ' ' '-'
+echo ""
+sudo npm install -g typescript
+sudo npm install -g assert
 npm i --save assert
 
 
@@ -42,7 +55,7 @@ echo ""
 echo "setting up Scala "
 printf "%100s" " " | tr ' ' '-'
 echo ""
-sudo apt-get install scala
+sudo apt-get install -y scala
 
 
 printf "%100s" " " | tr ' ' '-'
@@ -57,8 +70,8 @@ echo ""
 echo "setting up Kotlin "
 printf "%100s" " " | tr ' ' '-'
 echo ""
-sudo apt install zip
-sudo apt install unzip
+sudo apt install -y zip
+sudo apt install -y unzip
 curl -s https://get.sdkman.io | bash
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
