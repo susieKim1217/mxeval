@@ -1,5 +1,22 @@
 #!/usr/bin/bash
 
+apt install -y sudo pip vim
+pip install tqdm fire numpy gunicorn flask requests psutil cx_Oracle inquirer
+
+
+sudo npm install -g n
+sudo n 16.10.0
+node -e "console.log('Running Node.js ' + process.version)"
+npm i -g npm@8.19.4
+npm install -g lodash
+npm i --save lodash
+
+
+npm install -g typescript
+npm install -g assert
+npm i --save assert
+
+
 printf "%100s" " " | tr ' ' '-'
 echo ""
 echo "setting up php "
@@ -18,30 +35,6 @@ echo "setting up Java "
 printf "%100s" " " | tr ' ' '-'
 echo ""
 sudo apt-get install -y openjdk-8-jdk
-
-
-printf "%100s" " " | tr ' ' '-'
-echo ""
-echo "setting up JavaScript "
-printf "%100s" " " | tr ' ' '-'
-echo ""
-sudo npm install -g n
-sudo n 16.10.0
-node -e "console.log('Running Node.js ' + process.version)"
-npm i -g npm@8.19.4
-npm install -g lodash
-npm i --save lodash
-
-
-printf "%100s" " " | tr ' ' '-'
-echo ""
-echo "setting up TypeScript "
-printf "%100s" " " | tr ' ' '-'
-echo ""
-npm install -g typescript
-npm install -g assert
-npm i --save assert
-
 
 cd ~
 printf "%100s" " " | tr ' ' '-'
