@@ -1,21 +1,14 @@
 #!/usr/bin/bash
 
-printf "%100s" " " | tr ' ' '-'
-echo ""
-echo "setting up environment"
-printf "%100s" " " | tr ' ' '-'
-echo ""
-apt install -y sudo pip vim npm wget curl
-pip install tqdm fire numpy gunicorn flask requests psutil cx_Oracle inquirer
 
 printf "%100s" " " | tr ' ' '-'
 echo ""
 echo "setting up JavaScript "
 printf "%100s" " " | tr ' ' '-'
 echo ""
-curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
-source ~/.bashrc
 nvm install 16.10.0
+sudo npm install -g n
+sudo n 16.10.0
 node -e "console.log('Running Node.js ' + process.version)"
 npm i -g npm@8.19.4
 npm install -g lodash
@@ -26,8 +19,6 @@ echo ""
 echo "setting up TypeScript "
 printf "%100s" " " | tr ' ' '-'
 echo ""
-sudo npm install -g n
-sudo n 16.10.0
 sudo npm i -g npm@8.19.4
 sudo npm install -g typescript
 sudo npm install -g assert
