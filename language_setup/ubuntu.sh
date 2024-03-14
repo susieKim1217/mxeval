@@ -13,10 +13,13 @@ echo ""
 echo "setting up JavaScript "
 printf "%100s" " " | tr ' ' '-'
 echo ""
-sudo npm install -g n
-sudo n 16.10.0
+sudo apt install curl
+curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
+source ~/.bashrc
+sudo apt install npm
+nvm install 16.10.0
 node -e "console.log('Running Node.js ' + process.version)"
-sudo npm i -g npm@8.19.4
+npm i -g npm@8.19.4
 npm install -g lodash
 npm i --save lodash
 
@@ -25,6 +28,9 @@ echo ""
 echo "setting up TypeScript "
 printf "%100s" " " | tr ' ' '-'
 echo ""
+sudo npm install -g n
+sudo n 16.10.0
+sudo npm i -g npm@8.19.4
 sudo npm install -g typescript
 sudo npm install -g assert
 
